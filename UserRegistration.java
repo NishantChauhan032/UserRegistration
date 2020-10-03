@@ -10,5 +10,12 @@ public class UserRegistration{
       System.out.println("Invalid Input. Please enter a correct input for first name: ");
       firstName =  sc.next();
      }
+     System.out.println("Enter the Last Name: ");
+     String lastName = sc.next();
+     while(!Pattern.matches("[A-Z]{1}[a-z]{2,}",lastName)){
+      System.out.println("Invalid Input. Please enter a correct input for last name: ");
+      lastName =  sc.next();
+     }
+
    }
  }
