@@ -3,5 +3,12 @@ import java.util.regex.*;
 public class UserRegistration{
   public static void main(String[] args){
     System.out.println("Welcome to User Registartion");
-    }
-  }
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the First Name: ");
+    String firstName = sc.next();
+    while(!Pattern.matches("[A-Z]{1}[a-z]{2,}",firstName)){
+      System.out.println("Invalid Input. Please enter a correct input for first name: ");
+      firstName =  sc.next();
+     }
+   }
+ }
