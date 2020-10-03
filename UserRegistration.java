@@ -39,7 +39,7 @@ public class UserRegistration{
       System.out.println("Enter the password: ");
       String password = sc.next();
 
-          while(!Pattern.matches(".{8,}",password)){
+          while(!Pattern.matches("^(?=.*[A-Z]).{8,}$",password)){
              System.out.println("Invalid Input. Please enter a correct input for password: ");
              password =  sc.next();
           }
